@@ -7,8 +7,10 @@ describe('HomePage', () => {
   it('renders all sections from the given content', () => {
     render(<HomePage content={homeContentPt} />);
     expect(screen.getByText(homeContentPt.hero.title)).toBeInTheDocument();
+    expect(screen.getByText(homeContentPt.pain.heading)).toBeInTheDocument();
     expect(screen.getByText(homeContentPt.method.heading)).toBeInTheDocument();
     expect(screen.getByText(homeContentPt.estatePlanning.heading)).toBeInTheDocument();
+    expect(screen.getByText(homeContentPt.about.heading)).toBeInTheDocument();
     expect(screen.getByText(homeContentPt.finalCta.heading)).toBeInTheDocument();
   });
 });

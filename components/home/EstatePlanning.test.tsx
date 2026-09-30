@@ -5,7 +5,9 @@ import type { HomeContent } from '@/content/homeContent.types';
 
 const estatePlanning: HomeContent['estatePlanning'] = {
   heading: 'Estate Planning heading',
-  body: 'Estate Planning body',
+  intro: 'Estate Planning intro',
+  body: ['Paragraph one', 'Paragraph two'],
+  objectionBreak: 'Not just for the wealthy',
 };
 
 describe('EstatePlanning', () => {
@@ -14,9 +16,12 @@ describe('EstatePlanning', () => {
     expect(container.querySelector('section#servicos')).not.toBeNull();
   });
 
-  it('renders heading and body', () => {
+  it('renders heading, intro, all body paragraphs, and the objection break', () => {
     render(<EstatePlanning estatePlanning={estatePlanning} />);
     expect(screen.getByText('Estate Planning heading')).toBeInTheDocument();
-    expect(screen.getByText('Estate Planning body')).toBeInTheDocument();
+    expect(screen.getByText('Estate Planning intro')).toBeInTheDocument();
+    expect(screen.getByText('Paragraph one')).toBeInTheDocument();
+    expect(screen.getByText('Paragraph two')).toBeInTheDocument();
+    expect(screen.getByText('Not just for the wealthy')).toBeInTheDocument();
   });
 });

@@ -5,6 +5,7 @@ import type { HomeContent } from '@/content/homeContent.types';
 
 const finalCta: HomeContent['finalCta'] = {
   heading: 'Talk to us',
+  subtext: 'Free, no strings attached',
   calendlyLabel: 'Book now',
   calendlyUrl: 'https://calendly.com/example/30min',
   whatsappLabel: 'WhatsApp us',

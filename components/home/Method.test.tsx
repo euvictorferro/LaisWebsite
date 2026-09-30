@@ -5,8 +5,11 @@ import type { HomeContent } from '@/content/homeContent.types';
 
 const method: HomeContent['method'] = {
   heading: 'How it works',
-  body: 'Some body text',
-  points: ['Point A', 'Point B'],
+  intro: 'Some intro text',
+  items: [
+    { label: 'Term Life', body: 'Body A' },
+    { label: 'Whole Life', body: 'Body B' },
+  ],
 };
 
 describe('Method', () => {
@@ -15,9 +18,11 @@ describe('Method', () => {
     expect(container.querySelector('section#metodo')).not.toBeNull();
   });
 
-  it('renders all points as a list', () => {
+  it('renders all items with label and body', () => {
     render(<Method method={method} />);
-    expect(screen.getByText('Point A')).toBeInTheDocument();
-    expect(screen.getByText('Point B')).toBeInTheDocument();
+    expect(screen.getByText('Term Life')).toBeInTheDocument();
+    expect(screen.getByText('Body A')).toBeInTheDocument();
+    expect(screen.getByText('Whole Life')).toBeInTheDocument();
+    expect(screen.getByText('Body B')).toBeInTheDocument();
   });
 });

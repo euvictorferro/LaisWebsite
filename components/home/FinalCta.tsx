@@ -4,6 +4,7 @@ export function FinalCta({ finalCta }: { finalCta: HomeContent['finalCta'] }) {
   return (
     <section className="flex flex-col items-center gap-4 px-6 py-16 text-center">
       <h2 className="text-2xl font-bold sm:text-3xl">{finalCta.heading}</h2>
+      <p className="text-gray-600">{finalCta.subtext}</p>
       <div className="flex flex-col gap-3 sm:flex-row">
         <a
           href={finalCta.calendlyUrl}
