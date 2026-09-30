@@ -6,6 +6,7 @@ import type { HomeContent } from '@/content/homeContent.types';
 const baseHero: HomeContent['hero'] = {
   title: 'Test title',
   subtitle: 'Test subtitle',
+  qualifier: 'Test qualifier',
   videoUrl: '',
   ctaLabel: 'Book now',
   calendlyUrl: 'https://calendly.com/example/30min',
@@ -27,5 +28,10 @@ describe('Hero', () => {
     render(<Hero hero={baseHero} />);
     const link = screen.getByRole('link', { name: 'Book now' });
     expect(link).toHaveAttribute('href', 'https://calendly.com/example/30min');
+  });
+
+  it('renders the qualifier text', () => {
+    render(<Hero hero={baseHero} />);
+    expect(screen.getByText('Test qualifier')).toBeInTheDocument();
   });
 });

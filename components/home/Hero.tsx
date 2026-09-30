@@ -24,6 +24,8 @@ export function Hero({ hero }: { hero: HomeContent['hero'] }) {
       >
         {hero.ctaLabel}
       </a>
+
+      <p className="max-w-xl text-sm text-gray-500">{hero.qualifier}</p>
     </section>
   );
 }

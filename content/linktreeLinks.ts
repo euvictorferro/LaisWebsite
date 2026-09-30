@@ -1,4 +1,4 @@
-import { CALENDLY_URL, WHATSAPP_URL } from './contact';
+import { CALENDLY_URL, WHATSAPP_URL, CHECKLIST_URL } from './contact';
 
 export interface LinktreeLink {
   label: string;
@@ -16,6 +16,6 @@ export const linktreeLinks: LinktreeLink[] = [
   },
   {
     label: 'Checklist Patrimonial',
-    url: 'https://drive.google.com/file/d/1i76Mx1vXPymIKzbUuR2QuLZ9J8KlHGTc/view?usp=drive_link',
+    url: CHECKLIST_URL,
   },
 ];

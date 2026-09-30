@@ -7,9 +7,15 @@ function assertShape(content: HomeContent, lang: 'pt' | 'en') {
   expect(content.lang).toBe(lang);
   expect(content.hero.title.length).toBeGreaterThan(0);
   expect(content.hero.calendlyUrl).toMatch(/^https:\/\/calendly\.com\//);
-  expect(content.pain.items.length).toBeGreaterThan(0);
+  expect(content.pain.tiredOf.length).toBeGreaterThan(0);
+  expect(content.pain.alreadyDone.length).toBeGreaterThan(0);
+  expect(content.authority.points.length).toBeGreaterThan(0);
+  expect(content.authority.checklistUrl).toMatch(/^https:\/\//);
   expect(content.method.items.length).toBeGreaterThan(0);
   expect(content.estatePlanning.body.length).toBeGreaterThan(0);
+  expect(content.scenario.scenarioAItems.length).toBeGreaterThan(0);
+  expect(content.scenario.scenarioBItems.length).toBeGreaterThan(0);
+  expect(content.faq.items.length).toBeGreaterThan(0);
   expect(content.about.body.length).toBeGreaterThan(0);
   expect(content.finalCta.whatsappUrl).toMatch(/^https:\/\/wa\.me\//);
 }

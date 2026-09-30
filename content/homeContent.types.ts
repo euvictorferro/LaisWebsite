@@ -7,14 +7,25 @@ export interface HomeContent {
   hero: {
     title: string;
     subtitle: string;
+    qualifier: string;
     videoUrl: string;
     ctaLabel: string;
     calendlyUrl: string;
   };
   pain: {
     heading: string;
+    cascadeLines: string[];
+    tiredOfHeading: string;
+    tiredOf: string[];
+    alreadyHeading: string;
+    alreadyDone: string[];
+  };
+  authority: {
+    heading: string;
     intro: string;
-    items: string[];
+    points: string[];
+    ctaLabel: string;
+    checklistUrl: string;
   };
   method: {
     heading: string;
@@ -29,6 +40,21 @@ export interface HomeContent {
     intro: string;
     body: string[];
     objectionBreak: string;
+  };
+  scenario: {
+    heading: string;
+    scenarioALabel: string;
+    scenarioAItems: string[];
+    scenarioBLabel: string;
+    scenarioBItems: string[];
+    bridge: string;
+  };
+  faq: {
+    heading: string;
+    items: {
+      question: string;
+      answer: string;
+    }[];
   };
   about: {
     heading: string;
