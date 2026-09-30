@@ -2,8 +2,8 @@ import type { HomeContent } from '@/content/homeContent.types';
 
 export function Faq({ faq }: { faq: HomeContent['faq'] }) {
   return (
-    <section className="mx-auto max-w-3xl px-6 py-16">
-      <h2 className="text-2xl font-semibold text-midnight sm:text-3xl">{faq.heading}</h2>
+    <section className="mx-auto max-w-3xl px-6 py-20 sm:py-28">
+      <h2 className="font-serif text-3xl font-medium text-midnight sm:text-4xl">{faq.heading}</h2>
       <div className="mt-6 divide-y divide-stone/30">
         {faq.items.map((item) => (
           <div key={item.question} className="py-5">

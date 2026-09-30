@@ -2,8 +2,8 @@ import type { HomeContent } from '@/content/homeContent.types';
 
 export function Method({ method }: { method: HomeContent['method'] }) {
   return (
-    <section id="metodo" className="mx-auto max-w-3xl px-6 py-16">
-      <h2 className="text-2xl font-semibold text-midnight sm:text-3xl">{method.heading}</h2>
+    <section id="metodo" className="mx-auto max-w-3xl px-6 py-20 sm:py-28">
+      <h2 className="font-serif text-3xl font-medium text-midnight sm:text-4xl">{method.heading}</h2>
       <p className="mt-4 text-midnight/70">{method.intro}</p>
       <div className="mt-8 space-y-8">
         {method.items.map((item) => (

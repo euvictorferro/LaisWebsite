@@ -3,9 +3,9 @@ import { Column } from './Column';
 
 export function Authority({ authority }: { authority: HomeContent['authority'] }) {
   return (
-    <section className="bg-white px-6 py-16">
-      <div className="mx-auto max-w-3xl">
-        <h2 className="text-2xl font-semibold text-midnight sm:text-3xl">{authority.heading}</h2>
+    <section className="bg-white px-6 py-20 sm:py-28">
+      <div className="mx-auto max-w-5xl">
+        <h2 className="font-serif text-3xl font-medium text-midnight sm:text-4xl">{authority.heading}</h2>
         <p className="mt-4 text-midnight/70">{authority.intro}</p>
         <ul className="mt-6 space-y-4">
           {authority.points.map((point) => (

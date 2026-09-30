@@ -5,12 +5,14 @@ export function Hero({ hero }: { hero: HomeContent['hero'] }) {
   const hasVideo = hero.videoUrl.trim().length > 0;
 
   return (
-    <section className="flex flex-col items-center gap-6 bg-midnight px-6 py-20 text-center text-ivory sm:py-28">
+    <section className="flex flex-col items-center gap-8 bg-midnight px-6 py-28 text-center text-ivory sm:py-40">
       <Column className="h-10 w-10 text-sand" />
-      <h1 className="max-w-2xl text-3xl font-semibold sm:text-5xl">{hero.title}</h1>
+      <h1 className="max-w-3xl font-serif text-4xl font-medium leading-tight sm:text-6xl lg:text-7xl">
+        {hero.title}
+      </h1>
       <p className="max-w-xl text-base text-stone sm:text-lg">{hero.subtitle}</p>
 
-      <div className="aspect-video w-full max-w-2xl overflow-hidden rounded-sm bg-white/5">
+      <div className="aspect-video w-full max-w-3xl overflow-hidden rounded-sm bg-white/5">
         {hasVideo ? (
           <video data-testid="hero-video" src={hero.videoUrl} controls className="h-full w-full" />
         ) : (

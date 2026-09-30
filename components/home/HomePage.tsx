@@ -4,6 +4,7 @@ import { Hero } from './Hero';
 import { Pain } from './Pain';
 import { Authority } from './Authority';
 import { Method } from './Method';
+import { PhotoBreak } from './PhotoBreak';
 import { EstatePlanning } from './EstatePlanning';
 import { Scenario } from './Scenario';
 import { Faq } from './Faq';
@@ -19,6 +20,7 @@ export function HomePage({ content }: { content: HomeContent }) {
       <Pain pain={content.pain} />
       <Authority authority={content.authority} />
       <Method method={content.method} />
+      <PhotoBreak />
       <EstatePlanning estatePlanning={content.estatePlanning} />
       <Scenario scenario={content.scenario} />
       <Faq faq={content.faq} />

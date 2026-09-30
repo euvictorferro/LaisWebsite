@@ -6,9 +6,9 @@ export function EstatePlanning({
   estatePlanning: HomeContent['estatePlanning'];
 }) {
   return (
-    <section id="servicos" className="bg-white px-6 py-16">
+    <section id="servicos" className="bg-white px-6 py-20 sm:py-28">
       <div className="mx-auto max-w-3xl">
-        <h2 className="text-2xl font-semibold text-midnight sm:text-3xl">{estatePlanning.heading}</h2>
+        <h2 className="font-serif text-3xl font-medium text-midnight sm:text-4xl">{estatePlanning.heading}</h2>
         <p className="mt-4 text-midnight/70">{estatePlanning.intro}</p>
         <div className="mt-4 space-y-4 text-midnight/80">
           {estatePlanning.body.map((paragraph) => (

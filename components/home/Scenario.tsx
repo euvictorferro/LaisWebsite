@@ -2,8 +2,8 @@ import type { HomeContent } from '@/content/homeContent.types';
 
 export function Scenario({ scenario }: { scenario: HomeContent['scenario'] }) {
   return (
-    <section className="mx-auto max-w-3xl px-6 py-16">
-      <h2 className="text-2xl font-semibold text-midnight sm:text-3xl">{scenario.heading}</h2>
+    <section className="mx-auto max-w-3xl px-6 py-20 sm:py-28">
+      <h2 className="font-serif text-3xl font-medium text-midnight sm:text-4xl">{scenario.heading}</h2>
       <div className="mt-6 grid gap-6 sm:grid-cols-2">
         <div className="rounded-sm border border-stone/40 bg-stone/10 p-6">
           <h3 className="font-semibold text-midnight/70">{scenario.scenarioALabel}</h3>
