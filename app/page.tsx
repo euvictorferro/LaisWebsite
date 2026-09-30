@@ -1,3 +1,6 @@
+import { HomePage } from '@/components/home/HomePage';
+import homeContentPt from '@/content/home.pt';
+
 export default function Home() {
-  return <main>Placeholder</main>;
+  return <HomePage content={homeContentPt} />;
 }
