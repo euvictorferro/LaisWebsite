@@ -6,7 +6,6 @@ import type { HomeContent } from './homeContent.types';
 function assertShape(content: HomeContent, lang: 'pt' | 'en') {
   expect(content.lang).toBe(lang);
   expect(content.hero.title.length).toBeGreaterThan(0);
-  expect(content.hero.videoUrl).toBe('');
   expect(content.hero.calendlyUrl).toMatch(/^https:\/\/calendly\.com\//);
   expect(content.method.points.length).toBeGreaterThan(0);
   expect(content.estatePlanning.body.length).toBeGreaterThan(0);

@@ -2,9 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Laís Daltrozo | Life Insurance & Estate Planning',
-  description:
-    'Consultoria em Life Insurance e Estate Planning com Laís Daltrozo. Agende uma consultoria gratuita.',
+  title: 'Laís Daltrozo',
+  description: 'Laís Daltrozo | Life Insurance & Estate Planning',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

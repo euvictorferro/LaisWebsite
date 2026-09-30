@@ -1,4 +1,5 @@
 import type { HomeContent } from './homeContent.types';
+import { CALENDLY_URL, WHATSAPP_URL } from './contact';
 
 const homeContentPt: HomeContent = {
   lang: 'pt',
@@ -12,7 +13,7 @@ const homeContentPt: HomeContent = {
       'Consultoria em Life Insurance e Estate Planning para famílias que querem segurança financeira e um plano claro para o futuro.',
     videoUrl: '',
     ctaLabel: 'Agendar Consultoria',
-    calendlyUrl: 'https://calendly.com/laisdaltrozo/30min',
+    calendlyUrl: CALENDLY_URL,
   },
   method: {
     heading: 'Como funciona o Life Insurance',
@@ -33,9 +34,9 @@ const homeContentPt: HomeContent = {
   finalCta: {
     heading: 'Vamos conversar sobre o seu plano?',
     calendlyLabel: 'Agendar Consultoria',
-    calendlyUrl: 'https://calendly.com/laisdaltrozo/30min',
+    calendlyUrl: CALENDLY_URL,
     whatsappLabel: 'Falar no WhatsApp',
-    whatsappUrl: 'https://wa.me/13127097886',
+    whatsappUrl: WHATSAPP_URL,
   },
 };
 

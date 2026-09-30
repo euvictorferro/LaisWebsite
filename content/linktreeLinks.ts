@@ -1,3 +1,5 @@
+import { CALENDLY_URL, WHATSAPP_URL } from './contact';
+
 export interface LinktreeLink {
   label: string;
   url: string;
@@ -6,11 +8,11 @@ export interface LinktreeLink {
 export const linktreeLinks: LinktreeLink[] = [
   {
     label: 'Agendar Consultoria',
-    url: 'https://calendly.com/laisdaltrozo/30min',
+    url: CALENDLY_URL,
   },
   {
     label: 'Entrar em Contato (WhatsApp)',
-    url: 'https://wa.me/13127097886',
+    url: WHATSAPP_URL,
   },
   {
     label: 'Checklist Patrimonial',
