@@ -10,7 +10,7 @@ const homeContentPt: HomeContent = {
   hero: {
     title: 'Proteção patrimonial pra quem construiu a vida entre dois países',
     subtitle:
-      'Você trabalhou duro pra ter o que tem — no Brasil e nos EUA. Eu ajudo brasileiros a proteger essa história com Life Insurance e planejamento sucessório, sem depender só da sorte ou de "resolver depois".',
+      'Você trabalhou duro pra ter o que tem, no Brasil e nos EUA. Eu ajudo brasileiros a proteger essa história com Life Insurance e planejamento sucessório, sem depender só da sorte ou de "resolver depois".',
     qualifier:
       'Mesmo que você ache que "isso é assunto pra depois" ou que seu patrimônio ainda não é grande o suficiente pra precisar disso.',
     videoUrl: '',
@@ -36,13 +36,13 @@ const homeContentPt: HomeContent = {
       'Pensou "e se algo acontecer comigo, quem cuida da minha família nos EUA?"',
       'Adiou a conversa achando que ia doer no bolso mais do que realmente dói',
       'Viu alguém próximo enfrentar um processo de herança arrastado e complicado',
-      'Decidiu "resolver isso ano que vem" — e o ano que vem virou este ano de novo',
+      'Decidiu "resolver isso ano que vem", e o ano que vem virou este ano de novo',
     ],
   },
   authority: {
     heading: 'O checklist que expõe onde seu patrimônio está desprotegido',
     intro:
-      'Depois de anos ajudando brasileiros nos EUA a organizar seguro de vida e sucessão, eu reuni os 12 pontos que mais aparecem como lacuna real — e quase ninguém sabe que precisa resolver.',
+      'Depois de anos ajudando brasileiros nos EUA a organizar seguro de vida e sucessão, eu reuni os 12 pontos que mais aparecem como lacuna real. A maioria das pessoas nem sabe que precisa resolver isso.',
     points: [
       'Sua família ficaria travada num inventário lento e caro nos EUA?',
       'Seus bens no Brasil estão protegidos de um inventário judicial arrastado?',
@@ -60,7 +60,7 @@ const homeContentPt: HomeContent = {
       {
         label: 'Term Life',
         body:
-          'Seguro "por prazo" (10, 20 ou 30 anos). Se algo acontece nesse período, sua família recebe. Se o prazo termina e você está vivo, a apólice expira. É a opção mais barata — faz sentido se você tem dependentes pequenos, uma hipoteca com prazo definido, ou quer cobrir um período específico de risco.',
+          'Seguro "por prazo" (10, 20 ou 30 anos). Se algo acontece nesse período, sua família recebe. Se o prazo termina e você está vivo, a apólice expira. É a opção mais barata, e faz sentido se você tem dependentes pequenos, uma hipoteca com prazo definido, ou quer cobrir um período específico de risco.',
       },
       {
         label: 'Whole Life',
@@ -70,33 +70,33 @@ const homeContentPt: HomeContent = {
       {
         label: 'IUL (Indexed Universal Life)',
         body:
-          'Além de proteger sua família, acumula valor vinculado ao desempenho de índices do mercado (como o S&P 500). Quando o mercado sobe, seu saldo cresce junto — mas tem um piso de proteção: se o índice cair, seu saldo acumulado não perde valor. E você não precisa esperar morrer pra usar: esse valor pode ser acessado ainda em vida, pra complementar renda, cobrir emergências ou reforçar a aposentadoria.',
+          'Além de proteger sua família, acumula valor vinculado ao desempenho de índices do mercado (como o S&P 500). Quando o mercado sobe, seu saldo cresce junto, mas tem um piso de proteção: se o índice cair, seu saldo acumulado não perde valor. E você não precisa esperar morrer pra usar: esse valor pode ser acessado ainda em vida, pra complementar renda, cobrir emergências ou reforçar a aposentadoria.',
       },
     ],
   },
   estatePlanning: {
     heading: 'O que acontece com seu patrimônio se algo te impedir de decidir?',
     intro:
-      'Sem um planejamento sucessório, sua família enfrenta o probate — o processo judicial que confirma se o testamento é válido e autoriza a distribuição dos bens.',
+      'Sem um planejamento sucessório, sua família enfrenta o probate: o processo judicial que confirma se o testamento é válido e autoriza a distribuição dos bens.',
     body: [
-      'Nos EUA, o probate é obrigatório quando não existe um Trust. Ele leva em média de 6 meses a 2 anos, custa entre $15.000 e $50.000 — tirado direto da herança — e, diferente do que muita gente pensa, é público: qualquer pessoa pode consultar o que você deixou e para quem.',
-      'Eu ajudo você a entender e organizar as peças que evitam isso: um Trust (que distribui a herança em semanas, em sigilo, sem essas taxas), um testamento atualizado, e uma Power of Attorney — pra que alguém de sua confiança possa agir por você se você não puder.',
+      'Nos EUA, o probate é obrigatório quando não existe um Trust. Ele leva em média de 6 meses a 2 anos, custa entre $15.000 e $50.000, tirado direto da herança, e, diferente do que muita gente pensa, é público: qualquer pessoa pode consultar o que você deixou e para quem.',
+      'Eu ajudo você a entender e organizar as peças que evitam isso: um Trust (que distribui a herança em semanas, em sigilo, sem essas taxas), um testamento atualizado, e uma Power of Attorney, pra que alguém de sua confiança possa agir por você se você não puder.',
     ],
     objectionBreak:
-      'Isso não é "coisa pra rico" — é pra qualquer brasileiro nos EUA que já construiu algo e não quer deixar a família resolvendo sozinha, na dor, num sistema jurídico que não é o seu.',
+      'Isso não é "coisa pra rico". É pra qualquer brasileiro nos EUA que já construiu algo e não quer deixar a família resolvendo sozinha, na dor, num sistema jurídico que não é o seu.',
   },
   scenario: {
     heading: 'Daqui a 5 anos, qual cenário vai ser o seu?',
-    scenarioALabel: 'Cenário A — sem plano',
+    scenarioALabel: 'Cenário A: sem plano',
     scenarioAItems: [
       'Sua família enfrenta o probate: 6 meses a 2 anos de processo, pago com o próprio dinheiro que deveria ser herança.',
       'Todo o seu patrimônio continua dependendo de um único país e uma única moeda.',
       'Ninguém sabe exatamente o que você queria, porque nunca ficou escrito em lugar nenhum.',
     ],
-    scenarioBLabel: 'Cenário B — protegido',
+    scenarioBLabel: 'Cenário B: protegido',
     scenarioBItems: [
       'Sua família recebe o que é dela em semanas, em sigilo, sem taxas de inventário.',
-      'Seu plano financeiro não depende de um cenário só — você diversificou entre os dois países.',
+      'Seu plano financeiro não depende de um cenário só, você diversificou entre os dois países.',
       'Existe um documento claro, e alguém de confiança pode agir por você se precisar.',
     ],
     bridge:
@@ -113,7 +113,7 @@ const homeContentPt: HomeContent = {
       {
         question: 'Eu já tenho seguro de vida no Brasil, ainda preciso disso?',
         answer:
-          'Seguro brasileiro não resolve o que acontece com seus bens e sua família nos EUA. São sistemas jurídicos diferentes — o que protege lá não necessariamente protege aqui.',
+          'Seguro brasileiro não resolve o que acontece com seus bens e sua família nos EUA. São sistemas jurídicos diferentes: o que protege lá não necessariamente protege aqui.',
       },
       {
         question: 'Quanto custa a consulta?',
@@ -123,25 +123,25 @@ const homeContentPt: HomeContent = {
       {
         question: 'Preciso ser cidadão americano pra contratar um seguro de vida nos EUA?',
         answer:
-          'Não necessariamente — isso depende do seu status migratório e da seguradora. Na consulta eu te explico exatamente o que se aplica ao seu caso.',
+          'Não necessariamente. Isso depende do seu status migratório e da seguradora. Na consulta eu te explico exatamente o que se aplica ao seu caso.',
       },
       {
         question: 'Quanto tempo leva pra organizar tudo isso?',
         answer:
-          'Varia por caso, mas a maior parte do processo é mais rápida do que as pessoas imaginam — o que realmente demora é a decisão de começar.',
+          'Varia por caso, mas a maior parte do processo é mais rápida do que as pessoas imaginam. O que realmente demora é a decisão de começar.',
       },
     ],
   },
   about: {
     heading: 'Sobre a Laís',
     body: [
-      'Sou a Laís Daltrozo. Ajudo brasileiros que construíram vida nos Estados Unidos a proteger o que conquistaram dos dois lados da fronteira — com seguro de vida e planejamento patrimonial pensados pra quem tem raiz em dois países, não só em um.',
-      'Atendo em português, do jeito que você entende de verdade — sem o jurídiquês que só complica.',
+      'Sou a Laís Daltrozo. Ajudo brasileiros que construíram vida nos Estados Unidos a proteger o que conquistaram dos dois lados da fronteira, com seguro de vida e planejamento patrimonial pensados pra quem tem raiz em dois países, não só em um.',
+      'Atendo em português, do jeito que você entende de verdade, sem o jurídiquês que só complica.',
     ],
   },
   finalCta: {
     heading: 'Vamos conversar sobre o seu plano?',
-    subtext: 'Consulta gratuita, 20 minutos, em português — sem compromisso, sem letra miúda.',
+    subtext: 'Consulta gratuita, 20 minutos, em português. Sem compromisso, sem letra miúda.',
     calendlyLabel: 'Agendar Consultoria Gratuita',
     calendlyUrl: CALENDLY_URL,
     whatsappLabel: 'Falar no WhatsApp',
