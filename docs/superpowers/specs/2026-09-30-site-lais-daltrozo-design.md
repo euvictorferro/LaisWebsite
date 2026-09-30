@@ -26,7 +26,7 @@ Três páginas, apenas uma navegável publicamente como "site":
 
 1. **Home (`/`)** — landing page principal, bilíngue (PT/EN)
 2. **Serviços (`/servicos`)** — não é uma página de conteúdo; existe só como redirect fixo
-3. **Linktree (`/linktree`)** — página de links para a bio do Instagram
+3. **Página de links (`/link`)** — página de links para a bio do Instagram (não chamamos de "linktree" na URL pra não remeter à plataforma de terceiros)
 
 Fora de escopo nesta fase: Mediação, CRM/captura de lead em banco de dados, blog/CMS, painel administrativo.
 
@@ -42,7 +42,7 @@ Fora de escopo nesta fase: Mediação, CRM/captura de lead em banco de dados, bl
 - Duas rotas paralelas de conteúdo: `/` (PT, padrão) e `/en` (EN), ambas renderizando o mesmo layout de Home com textos diferentes.
 - Sem lib de i18n (`next-intl` etc.) — sobrecarga desnecessária para 1 página com 2 idiomas. Os textos de cada idioma ficam em dois arquivos de conteúdo simples (ex: `content/home.pt.ts` e `content/home.en.ts`) importados pela página correspondente.
 - Seletor de idioma simples no header (link `/` ↔ `/en`).
-- `/servicos` e `/linktree` não precisam de versão EN nesta fase (uso interno/bio, não é a landing pública principal) — a menos que surja necessidade depois.
+- `/servicos` e `/link` não precisam de versão EN nesta fase (uso interno/bio, não é a landing pública principal) — a menos que surja necessidade depois.
 
 ## Estrutura de rotas
 
@@ -50,7 +50,7 @@ Fora de escopo nesta fase: Mediação, CRM/captura de lead em banco de dados, bl
 /              → Home PT (landing page completa)
 /en            → Home EN (mesmo layout, conteúdo em inglês)
 /servicos      → redirect 301 para /#servicos (âncora na Home)
-/linktree      → página de links (standalone, layout diferente da Home)
+/link          → página de links (standalone, layout diferente da Home)
 ```
 
 `/servicos` existe como endereço fixo e estável (para ser usado em bio, anúncio, etc.) mesmo que a seção correspondente mude de lugar dentro da Home — o redirect é o único conteúdo dessa rota.
